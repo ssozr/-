@@ -1,0 +1,725 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 'Roboto','Noto Sans TC';
+    font-weight: 400;
+}
+
+.fw-r900{
+    font-weight: 900;
+}
+.fw-r400{
+    font-weight: 400;
+}
+
+.fw-n700{
+    font-weight: 700;
+}
+.fw-n500{
+    font-weight: 500;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.fz-20{
+    font-size: 20px;
+    line-height: 20px;
+}
+.fz-16{
+    font-size: 16px;
+    line-height: 24px;
+}
+.fz-14{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.fz-48{
+    font-size: 48px;
+    line-height: 72px;
+}
+.fz-24{
+    font-size: 24px;
+    line-height: 36px;
+}
+.fz-36{
+    font-size: 36px;
+    line-height: 54px;
+}
+.font-650300{
+    color: #650300;
+}
+.font-AA0601{
+    color: #AA0601;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
+
+.mb-48{
+    margin-bottom: 48px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.pb-48{
+    padding-bottom: 48px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.pt-80{
+    padding-top: 80px;
+}
+.pb-96{
+    padding-bottom: 96px;
+}
+.pb-16{
+    padding-bottom: 16px;
+}
+
+.bg-AA0601{
+    background-color: #AA0601;
+}
+
+.font-hover a:hover{
+    color: black;
+}
+.img-hover a:hover{
+    opacity: 0.5;
+}
+
+
+.font-white{
+    color: white;
+}
+.container{
+    max-width: 1269px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    height: 80px;
+}
+.header img{
+    height: 48.75px;
+    width: 80px;
+    margin-top: 16px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header ul{
+    display: flex; 
+    align-items: center;
+    margin-right: -32px;
+    margin-left: -32px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color:white;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.footer  a{
+    text-decoration: none;
+    color: white;
+}
+.footer .nav{
+    display: flex;
+    align-items: center;
+    margin-left: -24px;
+    margin-right: -24px;
+    width: 80%;
+}
+
+.footer .nav a{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+.footer .community{
+    display: flex;
+    margin-right: -16px;
+    margin-left: -16px;
+
+}
+
+.footer .container{
+    padding-top: 48px;
+}
+.footer .community img{
+    width: 48px;
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.footer .community a{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.fa-solid{
+    color:white;
+    margin-right: 22px;
+}
+
+.footer .contact{
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.footer .content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer .list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer .terms{
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid white;
+    padding-top: 32px;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.footer .terms ul{
+    display: flex;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+.footer .terms a{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+/* 以下為main */
+
+
+.section{
+    background-image: url(week3-4/home-header.png);
+    height: 787px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section .container{
+    display: flex;
+    justify-content: end;
+    padding-top: 296px;
+    text-align: right;
+}
+
+
+h1{
+    font-size: 64px;
+    line-height: 96px;
+    padding-bottom: 16px;
+}
+
+.section h2{
+    font-size: 36px;
+    line-height: 54px;
+}
+
+
+.section a{
+    text-decoration: none;
+    color: white;
+    background-color: #AA0601;
+    padding: 6px 12px 6px 12px;
+}
+
+.section a:hover{
+    color: #AA0601;
+    background-color: white;
+}
+.section2{
+    background-color: #FBF2F2;
+    text-align: center;
+}
+
+.section2 .service{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2 ul{
+    width: 23%;
+    margin-left: 24px;
+    flex-wrap: wrap;
+}
+
+.section2 img{
+    width: 27%;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.section2 ul p{
+    text-align: left;
+}
+.section3 {
+    text-align: center;
+  }
+.section3 ul{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.section3 li{
+    width: 32%;
+}
+
+.section4{
+    text-align: center;
+    background-image: url(week3-4/index-bg.png);
+    height: 608px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-double{
+    background-image: url(week3-4/home-section4-1.png);
+    height: 240px;
+    background-size: cover;
+    background-position: center center;
+}
+.img-youth{
+    background-image: url(week3-4/home-section4-2.png);
+    height: 240px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.section4 ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}  
+.section4 li{
+    background-color: white;
+    width:100%;
+}
+
+.section5 h2{
+    text-align: center;
+}
+
+
+.section5 ul{
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: -12px;
+    margin-right: -12px;
+    justify-content: space-between;
+}
+
+.section5 li{
+    width: 23%;
+}
+
+
+.section5 .content{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height: 205px;
+    box-shadow: 12px 12px 7px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+.section6{
+    background-color: #FBF2F2;
+}
+.section6 .container{
+    max-width: 636px;
+}
+
+.section6 h2{
+    text-align: center;
+}
+.section6 input{
+    background-color: #FBF2F2;
+}
+
+.section6 ul input{
+    width:100%;
+}
+
+.section6 .enter {
+    text-align: center;
+    width: 416px;
+    margin: 0 auto;
+    padding-top: 64px;
+}
+
+.section6 .enter a{
+    background-color: #AA0601;
+    padding: 16px 176px 16px 176px;
+    text-decoration: none;
+    color: white;
+}
+
+.section6 .enter a:hover{
+    color: black;
+    background-color: #650300;
+}
+
+.section6 textarea{
+    resize: none;
+    background-color: #FBF2F2;
+    width:100%;
+    height: 136px;
+
+}
+
+
+@media (max-width:768px) {
+    .container{
+        padding: 0 36px;
+    }
+    .section{
+        background-image: url(week3-4/home-header-sm.png);
+    
+    }
+    .section2 .service{
+        flex-wrap: wrap;
+    }
+    .section2 ul{
+        width: 46%;
+    }
+
+    .section3 ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section3 li{
+        width: 51%;
+        margin-bottom: 24px;
+    }
+
+    .section3 li img{
+        max-width: 100%;
+    }
+    .section4  ul{
+        flex-wrap: wrap;
+    }
+    .section4 img{
+        width: 100%;
+        height: 240px;
+    }
+
+    .section4 li{
+        margin-bottom: 24px;
+        height: 328px;
+    }
+
+    .section4{
+        background-image: url(week3-4/index-bg-sm.png);
+        height: 960px;
+    }
+
+    .section5 ul{
+        flex-wrap: wrap;
+        
+    }
+    .section5 li{
+        width: 48%;
+        margin-bottom: 24px;
+    }
+
+    .section6 .container{
+        max-width: 576px;
+    }
+
+    .section6 ul input{
+        height: 30px;
+    }
+
+    .section6 textarea{
+        height: 130px;
+    }
+    .section6 .enter{
+        width: 336px;
+        padding-top: 56px;
+    }
+    .section6 .enter a{
+        padding: 16px 136px 16px 136px;
+
+    }
+
+ 
+    .footer .community img{
+        max-width: 40px;
+        max-height: 40px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .footer .community{
+        margin-right: -8px;
+        margin-left: -8px;
+    }
+}
+
+@media (max-width:375px) {
+    .fz-36{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .mb-80{
+        margin-bottom: 40px;
+    }
+
+    .pb-80{
+        padding-bottom: 40px;
+    }
+
+    .pt-80{
+        padding-top: 40px;
+    }
+    .container{
+        padding: 0 20px 0 15px;
+    }
+    
+    .header .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center
+    }
+
+    .header{
+        height: 172px;
+    }
+   
+    .header img{
+        width: 80px;
+        margin-bottom: 15.45px;
+    }
+
+    .header ul{
+        flex-wrap: wrap;
+        
+    }
+    .header li{
+        width: 48%;
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: 1px solid white;
+    }
+    .header li a{
+        padding: 12px 62px;
+    }
+    .section{
+        height: 396px;
+    }
+    .section h2{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .section .container{
+        padding-top: 144px;
+    }
+    h1{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .section2 h2{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+    .section2 ul{
+        width: 100%;
+    }
+
+    .section3 li{
+        width: 100%;
+    }
+    .section3 h2{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+    .section4{
+        background-image: url(week3-4/index-bg-sm.png);
+        height: 820px;
+    }
+
+    .section4 h2{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+        padding-top: 40px;
+    }
+
+    .img-double{
+        background-image: url(week3-4/home-section4-1-sm.png);
+    }
+
+    .img-youth{
+        background-image: url(week3-4/home-section4-2-sm.png);
+    }
+    .section5 li{
+        width: 100%;
+    }
+
+    .section5 h2{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    .section6 h2{
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+    .section6 p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .section6 .container{
+        width: 348px;
+    }
+
+    .section6 .enter{
+        padding-top: 40px;
+        width: 348px;
+        padding-bottom: 40px;
+    }
+
+    .footer .nav{
+        display: none;
+    }
+
+    .footer .community{
+        margin-left: -4px;
+        margin-right: -4px;
+        
+    }
+
+    .footer .community img{
+        padding-left: 4px;
+        padding-right: 4px;
+        height: 24px;
+        width: 24px;
+    }
+
+   
+    .footer .contact{
+        width: 70%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer .list{
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+
+    .footer .terms{
+        padding-top: 16px;
+        padding-bottom: 24px;
+        margin-top: 24px;
+    }
+    .footer .terms p{
+        margin-bottom: 8px;
+    }
+    .footer .terms ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer .terms li{
+        width: 100%;
+        padding-bottom: 8px;
+    }
+
+    .footer .container{
+        padding-top: 24px;
+    }
+   
+}
